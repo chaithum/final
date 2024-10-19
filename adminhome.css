@@ -1,0 +1,120 @@
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+   
+  /* Background image for the body */
+  body {
+    background: url('../../public/images/food.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+  }
+   
+  /* Main container with opacity */
+  .containers {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    color: white;
+    text-align: center;
+  }
+   
+  /* Navbar styling */
+  .navbar {
+    background-color:chocolate; /* Navbar color */
+    padding: 15px;
+    font-family: Verdana, Tahoma, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+   
+  }
+   
+  .navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    /* color: white; */
+    color: chocolate;
+  }
+   
+   
+  .cardbody {
+    background: transparent;
+    border: none;
+  }
+   
+  /* Card Title */
+  .MDBCardTitle {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff; /*White for the title*/
+  }
+   
+  /* Card Text */
+  .MDBCardText {
+    font-size: 18px;
+    color: #ddd; /* Light gray text */
+    margin-bottom: 30px;
+  }
+   
+  /* Buttons Styling */
+  .MDBRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+   
+  .MDBCol {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+   
+  .btn {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px;
+    width: 100%;  
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+   
+  /* Button hover effects */
+  .btn:hover {
+    color: chocolate;
+    opacity: 0.9;
+    transform: translateY(-3px); /* Slight lift on hover */
+    transition: all 0.3s ease;
+  }
+   
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .containers {
+      max-width: 90%;
+      padding: 20px 10px;
+    }
+   
+    .MDBCardTitle {
+      font-size: 28px;
+    }
+   
+    .MDBCardText {
+      font-size: 16px;
+    }
+   
+    .MDBCol {
+      width: 100%;
+    }
+  }
+   
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 22px;
+    }
+   
+    .btn {
+   
+      font-size: 16px;
+    }
+  }
+   
